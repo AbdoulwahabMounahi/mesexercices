@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Mono&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Mono&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    margin: 0 auto;
+    min-height: 500vh;
+    
+}
+header.header{
+    display: flex;
+    align-items: center;
+    
+}
+header.header img{
+  width: 80px;  
+}
+section.top-page{
+    background: url('./bgnat1.jpg');
+    height: 90vh;
+    background-size: cover;
+    padding: 25px;
+   
+}
+.landing-page{
+    padding: 20px 50px;
+}
+.big-title{
+    color: white;
+    font-size: 70px;
+    font-weight: 100;
+    font-family: "Abril Fatface", serif;
+}
+.scroll-down{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 50px; 
+}
+
+/* menu de navigation */
+nav.nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 30px;
+}
+nav.nav li{
+    color: white;
+}
+
+/* sercices */
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+.delivery-items{
+    font-size: 50px;
+    color:green ;
+}
+.service-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.service-details{
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+/* les ventes */
+.section-title{
+    font-size: 50px;
+    font-family: "Abril Fatface",sans-serif;
+    font-weight: 100;
+    position: relative;
+}
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: green;
+    height: 7px;
+    width: 50px;
+    bottom: 0;
+}
+
+.best-items{
+    margin: 50px;
+}
+.best-food{
+    background-color: red;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.plat-box{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    
+}
+.no-grid{
+    min-width: 300px;
+    height: 500px;
+    flex: 1;
+
+}
+.plat1{
+    background-image: url(./bestpalt1.webp); 
+}
+.plat2{
+    background-image: url(./bestplat2.webp);
+}
+.plat3{
+    background-image: url(./best\ plat3.webp);
+}
+.plat4{
+    background-image: url(./bestplat4.webp);
+}
+.details-plat{
+    background-color:#FFFFFFDF ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 20px;
+}
+.nom-plat{
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+.prix-plat{
+    color: green;
+    font-weight: 800;
+    font-size: 14px;
+}
+/* Nos plantes */
+.all-plat{
+    margin: 100px;
+}
+.plat-grid{
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,400px);
+}
+
+.plat-grid1{
+    background-image: url(./vente1.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.plat-grid2{
+    background-image: url(./beroua.jpg);
+    grid-column: 3/5;
+   
+}
+
+.plat-grid3{
+    background-image: url(./dambou.jpg);
+      grid-column: 3/5;
+   
+}
+
+.plat-grid4{
+    background-image: url(./massa.jpg);
+    grid-column: 1/3;
+    
+    
+    
+}
+.plat-grid5{
+    background-image: url(./dan\ wake.jpg);
+    grid-column: 3/5;
+   
+}
+/* footer */
+footer{
+    justify-content:space-between;
+    display: flex;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+footer a.cgv{
+    text-decoration: none;
+    color: black;
+}
