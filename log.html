@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mounahi's Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box active" id="login-form">
+            <form action="">
+                <h2>Login</h2>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="password" placeholder="Mot de passe" required>
+                <button type="submit" name="login">Login</button>
+                <p>j'ai pas de compte? <a href="#" onclick="showForm('register-form')">M'inscrire</a></p>
+
+            </form>
+        </div>
+
+         <div class="form-box" id="register-form">
+            <form action="">
+                <h2>Register</h2>
+                <input type="text" name="name" placeholder="Nom d'utilisateur" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="password" placeholder="Mot de passe" required>
+                <select name="role"  required>
+                    <option value="">--Choisir une option--</option>
+                    <option value="user">Utilisateur</option>
+                    <option value="admin">Administrateur</option>
+                </select>
+                <button type="submit" name="register">Register</button>
+                <p>j'ai dejà un compte? <a href="#" onclick="showForm('login-form')">Me connecter</a></p>
+
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
