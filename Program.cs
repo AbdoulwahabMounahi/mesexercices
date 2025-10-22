@@ -1,40 +1,31 @@
-﻿namespace exercice3Tp2;
+﻿
+
+namespace Exercice4tp2;
 
 class Program
 {
-    static int somme(int a, int b)
-    {
-        return a + b;
-    }
-    static void Tableau()
-    {
-        int taille;
-        int sum=0;
-
-        Console.WriteLine("donner la taille du tableau:");
-        taille = int.Parse(Console.ReadLine());
-        int[] tab = new int[taille];
-        for(int i = 0; i < taille; i++)
-        {
-            Console.WriteLine("donner un entier:");
-            tab[i] = int.Parse(Console.ReadLine());
-            sum += tab[i];
-        }
-        Console.WriteLine("la somme des elements du tableau est :"+sum);
-    }
-    
     static void Main(string[] args)
     {
-        Console.WriteLine("donner un entier :");
-        int a = int.Parse(Console.ReadLine());
-        Console.WriteLine("donner un autre entier :");
-        int b = int.Parse(Console.ReadLine());
-        int resultat=somme(a,b);
-        Console.WriteLine("la somme est :" + resultat);
-        
-        Tableau();
+        string str = "  C# programming 2024 or Csharp programming 2024  ";
+        Console.WriteLine("la taille de cette chaine est :" + str.Length);
+        Console.WriteLine("la position de la premiere occurence de C est :" + str.IndexOf('C'));
+        Console.WriteLine("la position de la derniere occurence de C est :" + str.LastIndexOf('C'));
+        Console.WriteLine("la chaine sans espace de debut et de fin est :" + str.Trim());
+        string str1 = str.Trim().Substring(0, 2);
+        Console.WriteLine("les deux premiers caracteres de la chaine sont :" + str1);
 
-      
+        int cpt;
+        cpt = 0;
+        foreach (char c in str)
+        {
+            if (char.IsDigit(c))
+            {
+                cpt++;
+
+            }
+
+        }
+         Console.WriteLine("les chiffres presents dans la chaine sont :" + cpt);
 
     }
 }
